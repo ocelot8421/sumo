@@ -11,7 +11,7 @@ A feladatokhoz kapni fogtok mintamegoldásokat is, de azt javasoljuk, hogy elős
 ### Osztály, példányok, attribútumok, láthatóság
 - **intro.client.Client**                            done
 - **intro.music.Music**                              done
-- **intro.note.Note**
+- **intro.note.Note**                                done
 
 ### Metódusok, getter-setter
 - **methods.employee.Employee**

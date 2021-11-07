@@ -13,4 +13,17 @@ package hu.progmasters.oop.intro.note;
  * formátumban, és használd ezt a metódust a kiírásnál.
  */
 public class NoteMain {
+
+    public static void main(String[] args) {
+
+        Note note = new Note();
+        note.setName("hahha");
+        note.setTopic("vicc");
+        note.setText("ez sz*r volt");
+
+        System.out.println(note.getName() + ": (" + note.getTopic() + ") " + note.getText());
+        System.out.println(note.getNoteInfo());
+
+    }
+
 }
