@@ -1,5 +1,7 @@
 package hu.progmasters.oop.intro.music;
 
+import java.util.Scanner;
+
 /**
  * Készíts egy Song osztályt, melyben eltárolhatod egy dal előadóját (band),
  * címét (title) és a hosszát (length) percben!
@@ -10,4 +12,18 @@ package hu.progmasters.oop.intro.music;
  */
 public class Music {
 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        Song fav = new Song();
+
+        System.out.println("Band:");
+        fav.setBand(scanner.nextLine());
+        System.out.println("Title:");
+        fav.setTitle(scanner.nextLine());
+        System.out.println("Length:");
+        fav.setLength(scanner.nextInt());
+
+        System.out.println(fav.getBand() + " - " + fav.getTitle() + " (" + fav.getLength() + " perc)");
+    }
 }

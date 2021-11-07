@@ -9,8 +9,8 @@ A feladatokhoz kapni fogtok mintamegoldásokat is, de azt javasoljuk, hogy elős
 ## Feladatok
 
 ### Osztály, példányok, attribútumok, láthatóság
-- **intro.client.Client**                            in progress
-- **intro.music.Music**
+- **intro.client.Client**                            done
+- **intro.music.Music**                              done
 - **intro.note.Note**
 
 ### Metódusok, getter-setter
