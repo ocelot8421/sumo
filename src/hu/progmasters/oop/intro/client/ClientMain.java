@@ -33,8 +33,5 @@ public class ClientMain {
         System.out.println(babo.name);
         System.out.println(babo.year);
         System.out.println(babo.address);
-
-
-
     }
 }
