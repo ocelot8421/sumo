@@ -11,5 +11,49 @@ package hu.progmasters.oop.methods.cake;
  * és a szeletek számát adod meg, ezekből pedig a konstruktor határozza meg a szeletek árát!
  */
 public class Cake {
+    private String name;
+    private int price;
+    private int pieces;
+    private int pricePerPiece;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getPieces() {
+        return pieces;
+    }
+
+    public void setPieces(int pieces) {
+        this.pieces = pieces;
+    }
+
+    public int getPricePerPiece() {
+        return pricePerPiece;
+    }
+
+    public void setPricePerPiece(int pricePerPiece) {
+        this.pricePerPiece = pricePerPiece;
+    }
+
+    public Cake(String name, int price, int pieces) {
+        this.name = name;
+        this.price = price;
+        this.pieces = pieces;
+        this.pricePerPiece = price / pieces;
+
+
+    }
 }
