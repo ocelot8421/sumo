@@ -18,5 +18,8 @@ package hu.progmasters.oop.composition.band;
  * Hozz létre, egy BandMain classt, ahol példányosítasz egy Band-et, és meghívod a playSong() metódusát.
  */
 public class Band {
-
+    public static void main(String[] args) {
+        Keyboard keyboard = new Keyboard();
+        keyboard.makeSound();
+    }
 }

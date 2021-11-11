@@ -30,8 +30,8 @@ megoldani őket, ha elakadtok, akkor is előbb kérjetek segítséget a többi h
 - encapsulation.account.Account                      done
 
 ### Kompozíció
-- **composition.customer.CustomerMain**              in progress
-- **composition.band.Band**
+- **composition.customer.CustomerMain**              done
+- **composition.band.Band**                          in progress
 - composition.band.Desk
 - composition.sumo.Sumo
 - composition.hardsumo.HardSumo
