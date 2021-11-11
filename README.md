@@ -21,9 +21,9 @@ megoldani őket, ha elakadtok, akkor is előbb kérjetek segítséget a többi h
 
 ### Metódusok, getter-setter
 - **methods.employee.Employee**                      doouble furán jelent meg
-- **methods.employee.Cake**
-- methods.number.Number
-- methods.privateclient.PrivateClientMain
+- **methods.cake.Cake**                              done
+- methods.number.Number                              done
+- methods.privateclient.PrivateClientMain            in progress
 
 ### Encapsulation (egységbezárás)
 - **encapsulation.time.Time**
