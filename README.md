@@ -26,8 +26,8 @@ megoldani őket, ha elakadtok, akkor is előbb kérjetek segítséget a többi h
 - methods.privateclient.PrivateClientMain            done
 
 ### Encapsulation (egységbezárás)
-- **encapsulation.time.Time**                        in progress
-- encapsulation.account.Account
+- **encapsulation.time.Time**                        done
+- encapsulation.account.Account                      in progress
 
 ### Kompozíció
 - **composition.customer.CustomerMain**

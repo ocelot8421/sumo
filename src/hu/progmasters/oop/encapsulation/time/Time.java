@@ -33,12 +33,16 @@ public class Time {
     private int hour;
     private int minute;
     private int second;
+    private int secondsInt;
+
+    public Time(int secondsInt) {
+        this.secondsInt = secondsInt;
+    }
 
     public Time(int hour, int minute, int second) {
         this.hour = checking(hour, 24);
         this.minute = checking(minute, 60);
         this.second = checking(second, 60);
-        System.out.println(this.hour + ":" + this.minute + ":" + this.second);
     }
 
     private int checking(int input, int limit) {
@@ -49,4 +53,43 @@ public class Time {
         return input;
     }
 
+    public void testPrint() {
+        System.out.println(this.hour + ":" + this.minute + ":" + this.second);
+    }
+
+    public void setHour(int hour) {
+        if (hour < 0 || hour > 23) {
+            System.out.println("Invalid format.");
+        } else {
+            this.hour = hour;
+        }
+    }
+
+    public void setMinute(int minute) {
+        if (minute < 0 || minute > 59) {
+            System.out.println("Invalid format.");
+        } else {
+            this.minute = minute;
+        }
+    }
+
+    public void setSecond(int second) {
+        if (second < 0 || second > 59) {
+            System.out.println("Invalid format.");
+        } else {
+            this.second = second;
+        }
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public int getSecond() {
+        return second;
+    }
 }
