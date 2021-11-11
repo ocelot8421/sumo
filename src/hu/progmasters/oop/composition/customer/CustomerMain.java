@@ -1,5 +1,7 @@
 package hu.progmasters.oop.composition.customer;
 
+import java.util.Arrays;
+
 /**
  * Készíts egy Address (lakcím) nevű osztályt, ami a következő attríbútumokat tartalmazza:
  * - town (String) (város)
@@ -23,6 +25,11 @@ package hu.progmasters.oop.composition.customer;
 public class CustomerMain {
 
     public static void main(String[] args) {
+        Customer peter = new Customer( 6, "Főni","Coruscant", "Pipaxs", 1366,
+                "5", "peti@en.hu");
+
+        System.out.println(peter);
+
 
     }
 }

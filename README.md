@@ -27,10 +27,10 @@ megoldani őket, ha elakadtok, akkor is előbb kérjetek segítséget a többi h
 
 ### Encapsulation (egységbezárás)
 - **encapsulation.time.Time**                        done
-- encapsulation.account.Account                      in progress
+- encapsulation.account.Account                      done
 
 ### Kompozíció
-- **composition.customer.CustomerMain**
+- **composition.customer.CustomerMain**              in progress
 - **composition.band.Band**
 - composition.band.Desk
 - composition.sumo.Sumo
