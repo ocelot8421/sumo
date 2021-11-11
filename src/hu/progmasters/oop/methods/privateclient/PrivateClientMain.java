@@ -13,25 +13,34 @@ public class PrivateClientMain {
 //        Vedd ki a komment jelölést az alábbi utasítások elől, a hiányzó metódusokat írd meg, és ellenőrizd le, hogy
 //        megfelelően működnek-e.
 //
-//        PrivateClient client = new PrivateClient();
-//
-//        client.setName("P. Sherman");
-//        client.setYear(1974);
-//        client.setAddress("42 Wallaby Way, Sydney");
-//
-//        String expectedName = "P. Sherman";
-//        int expectedYear = 1974;
-//        String expectedAddress = "42 Wallaby Way, Sydney";
-//
-//        String name = client.getName();
-//        int year = client.getYear();
-//        String address = client.getAddress();
-//
-//        System.out.println(expectedName.equals(name) ? "név megfelelő" : "név nem megfelelő");
-//        System.out.println(expectedYear == year ? "év megfelelő" : "év nem megfelelő");
-//        System.out.println(expectedAddress.equals(address) ? "cím megfelelő" : "cím nem megfelelő");
-//
+        //példányosítás
+        PrivateClient client = new PrivateClient();
+
+
+        //definiálás
+        client.setName("P. Sherman");
+        client.setYear(1974);
+        client.setAddress("42 Wallaby Way, Sydney");
+
+        //várt adatok az ellenőrzéskor
+        String expectedName = "P. Sherman";
+        int expectedYear = 1974;
+        String expectedAddress = "42 Wallaby Way, Sydney";
+
+        //kapott adatok az ellenőrzéskor
+        String name = client.getName();
+        int year = client.getYear();
+        String address = client.getAddress();
+
+        //ellenőrzés
+        System.out.println(expectedName.equals(name) ? "név megfelelő" : "név nem megfelelő");
+        System.out.println(expectedYear == year ? "év megfelelő" : "év nem megfelelő");
+        System.out.println(expectedAddress.equals(address) ? "cím megfelelő" : "cím nem megfelelő");
+
 //        Ez miért nem működik?
-//        System.out.println(client.name);
+        System.out.println(client.getName());
     }
+
+
+
 }
