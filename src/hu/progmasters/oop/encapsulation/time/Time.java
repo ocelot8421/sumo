@@ -30,4 +30,23 @@ package hu.progmasters.oop.encapsulation.time;
  * Mit kell ehhez átírnod a getter és setter metódusok belsejében és a konstruktorban?
  */
 public class Time {
+    private int hour;
+    private int minute;
+    private int second;
+
+    public Time(int hour, int minute, int second) {
+        this.hour = checking(hour, 24);
+        this.minute = checking(minute, 60);
+        this.second = checking(second, 60);
+        System.out.println(this.hour + ":" + this.minute + ":" + this.second);
+    }
+
+    private int checking(int input, int limit) {
+        if (input < 0 || input > limit) {
+            System.out.println("Warning: " + input + " is invalid format. It has changed to zero.");
+            input = 0;
+        }
+        return input;
+    }
+
 }

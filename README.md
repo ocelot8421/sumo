@@ -23,10 +23,10 @@ megoldani őket, ha elakadtok, akkor is előbb kérjetek segítséget a többi h
 - **methods.employee.Employee**                      doouble furán jelent meg
 - **methods.cake.Cake**                              done
 - methods.number.Number                              done
-- methods.privateclient.PrivateClientMain            in progress
+- methods.privateclient.PrivateClientMain            done
 
 ### Encapsulation (egységbezárás)
-- **encapsulation.time.Time**
+- **encapsulation.time.Time**                        in progress
 - encapsulation.account.Account
 
 ### Kompozíció
