@@ -31,5 +31,29 @@ package hu.progmasters.oop.encapsulation.account;
  * a deposit és withdraw metódusokon keresztül!
  */
 public class Account {
+    private int balance = 0;
+
+    public void deposit(int amount) {
+        if (amount < 1000) {
+            System.out.println("Sikertelen művelet. Egyenlege: " + balance);
+        } else {
+            balance += amount;
+            System.out.println("Feltöltés: " + amount + ". Új egyenlege: " + balance);
+        }
+    }
+
+    public void withdraw(int amount) {
+        int handlingCharge = 10;
+        int withdrawGross = amount + handlingCharge;
+        if (amount < 1000 || balance < withdrawGross) {
+            System.out.println("Sikertelen művelet. Egyenlege: " + balance);
+        } else {
+            balance -= withdrawGross;
+            System.out.println(
+                    "Levonás: " + amount + ". Kezelési költség: " + handlingCharge + ". Új egyenlege: " + balance
+            );
+        }
+    }
+
 
 }
