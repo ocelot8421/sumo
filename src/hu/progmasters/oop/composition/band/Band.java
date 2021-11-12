@@ -21,5 +21,11 @@ public class Band {
     public static void main(String[] args) {
         Keyboard keyboard = new Keyboard();
         keyboard.makeSound();
+        Drum drum = new Drum();
+        drum.makeSound();
+        Guitar guitar = new Guitar();
+        guitar.makeSound();
+        Bass bass = new Bass();
+        bass.makeSound();
     }
 }
