@@ -33,30 +33,14 @@ package hu.progmasters.oop.composition.sumo;
  * ami megkapja a két Wrestlert, és ami a logikát tartalmazza.
  */
 public class Sumo {
-    private Wrestler wrestlerRed;
-    private Wrestler wrestlerBlue;
-
-    public Sumo(Wrestler wrestlerRed, Wrestler wrestlerBlue) {
-        this.wrestlerRed = wrestlerRed;
-        this.wrestlerBlue = wrestlerBlue;
+    public static void main(String[] args) {
+        Ring grrr = new Ring(
+                new Wrestler("Béla", 200),
+                new Wrestler("NemBéla", 199)
+        );
+        grrr.playHard();
     }
 
-    public void playMatch() {
-        if(weightCheckEquals()){
-            System.out.println("Draw.");
-        } else if (weightCheckRedBigger()){
-            System.out.println("The winner is the " + wrestlerRed.getName());
-        } else {
-            System.out.println("The winner is " + wrestlerBlue.getName());
-        }
-    }
 
-    private boolean weightCheckEquals() {
-        return wrestlerRed.getWeight() == wrestlerBlue.getWeight();
-    }
-
-    private boolean weightCheckRedBigger(){
-        return wrestlerRed.getWeight() > wrestlerBlue.getWeight();
-    }
 
 }
