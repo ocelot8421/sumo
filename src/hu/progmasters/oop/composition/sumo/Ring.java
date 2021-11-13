@@ -11,17 +11,12 @@ public class Ring {
 
     public void playHard() {
         int subWeight = wrestlerLeft.getWeight() - wrestlerRight.getWeight();
-        int step = subWeight / Math.abs(subWeight);
+        int step = subWeight != 0 ? subWeight / Math.abs(subWeight) : 0;
         for (int i = 0; i < 11; i++) {
             leftDetails();
-            lines00();
-            for (int j = 0; j < 9 + i * step; j++) {
-                System.out.print("_");
-            }
-                System.out.print("00");
-            for (int j = 0; j < 9 - i * step; j++) {
-                System.out.print("_");
-            }
+            String line00 = lines00();
+            String line00changed = line00.substring(10 - step * i, 30 - step * i);
+            System.out.print(line00changed);
             rightDetails();
             System.out.println();
         }
@@ -54,8 +49,8 @@ public class Ring {
         return wrestlerLeft.getWeight() > wrestlerRight.getWeight();
     }
 
-    private void lines00() {
-
+    private String lines00() {
+        return "___________________O0___________________";
     }
 
 }

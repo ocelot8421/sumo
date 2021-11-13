@@ -35,8 +35,8 @@ package hu.progmasters.oop.composition.sumo;
 public class Sumo {
     public static void main(String[] args) {
         Ring grrr = new Ring(
-                new Wrestler("Béla", 200),
-                new Wrestler("NemBéla", 199)
+                new Wrestler("Béla", 150),
+                new Wrestler("NemBéla", 160)
         );
         grrr.playHard();
     }
