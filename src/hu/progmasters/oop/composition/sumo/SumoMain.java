@@ -8,6 +8,7 @@ public class SumoMain {
                 new Wrestler("NemBéla", 201)
         );
         grrr.playMatch();
+
     }
 
 }
