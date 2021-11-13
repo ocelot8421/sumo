@@ -18,14 +18,22 @@ package hu.progmasters.oop.composition.band;
  * Hozz létre, egy BandMain classt, ahol példányosítasz egy Band-et, és meghívod a playSong() metódusát.
  */
 public class Band {
-    public static void main(String[] args) {
-        Keyboard keyboard = new Keyboard();
-        keyboard.makeSound();
-        Drum drum = new Drum();
-        drum.makeSound();
-        Guitar guitar = new Guitar();
-        guitar.makeSound();
-        Bass bass = new Bass();
-        bass.makeSound();
+    private Drummer drummer;
+    private Bassist bassist;
+    private Guitarist guitarist;
+    private Keyboardist keyboardist;
+
+    public Band(Drummer drummer, Bassist bassist, Guitarist guitarist, Keyboardist keyboardist) {
+        this.drummer = drummer;
+        this.bassist = bassist;
+        this.guitarist = guitarist;
+        this.keyboardist = keyboardist;
+    }
+
+    public void playSong() {
+        drummer.play();
+        bassist.play();
+        guitarist.play();
+        keyboardist.play();
     }
 }
