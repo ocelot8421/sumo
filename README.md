@@ -32,8 +32,8 @@ megoldani őket, ha elakadtok, akkor is előbb kérjetek segítséget a többi h
 ### Kompozíció
 - **composition.customer.CustomerMain**              done
 - **composition.band.Band**                          done
-- composition.band.Desk                             
-- composition.sumo.Sumo                              in progress
+- composition.desk.Desk                              in progress
+- composition.sumo.Sumo                              done
 - composition.hardsumo.HardSumo
 
 ### Tesztelés

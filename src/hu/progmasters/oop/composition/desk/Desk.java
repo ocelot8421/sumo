@@ -1,5 +1,7 @@
 package hu.progmasters.oop.composition.desk;
 
+import java.util.Scanner;
+
 /**
  * Hozz létre egy Paper osztályt (papír)!
  * A papíron lévő tartalmat egy String példányváltozó reprezentálja.
@@ -24,11 +26,37 @@ package hu.progmasters.oop.composition.desk;
  * <p>
  * Hozz létre egy Desk osztályt (íróasztal).
  * Az íróasztalon van egy rádió, egy számítógép, egy fénykép és van három fiókja.
- * Az íróasztal vagy rendezett, vagy rendetlen. Akkor rendezett, ha minden fiók csukva van, a számítógép és a rádió ki van kapcsolva.
+ * Az íróasztal vagy rendezett, vagy rendetlen. Akkor rendezett, ha minden fiók csukva van,
+ * a számítógép és a rádió ki van kapcsolva.
  * Lehetőségünk van rendbe rakni az asztalt.
  * <p>
- * Minden információt ki tudunk íratni az asztalról, beleértve a fiókok állapotát és tartalmát, a rádió állapotát (be/kikapcsolt),
+ * Minden információt ki tudunk íratni az asztalról, beleértve a fiókok állapotát és tartalmát,
+ * a rádió állapotát (be/kikapcsolt),
  * a számítógép állapotát és információt a fényképről.
  */
+
+
 public class Desk {
+
+    Scanner scan = new Scanner(System.in);
+
+    private Radio radio;
+    private Computer computer;
+    private Photograph photograph;
+    private Drawer drawer1 = new Drawer("felső");
+    private Drawer drawer2 = new Drawer("középső");
+    private Drawer drawer3 = new Drawer("alsó");
+
+
+    public static void main(String[] args) {
+        Desk desk = new Desk();
+        Paper paper01 = new Paper("reklám");
+        desk.drawer1.putPaperIntoDraw(new Paper("meghívó"));
+        desk.drawer2.putPaperIntoDraw(paper01);
+        desk.drawer1.whatIsInTheDrawer();
+        desk.drawer2.whatIsInTheDrawer();
+        desk.drawer3.whatIsInTheDrawer();
+    }
+
+
 }
